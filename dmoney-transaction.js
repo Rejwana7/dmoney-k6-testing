@@ -123,7 +123,8 @@ export let options = {
     'checks{api:Payment,kind:transaction}': ['rate>=0.99'],
   },
   setupTimeout: '120s', summaryTrendStats: ['avg', 'min', 'med', 'max', 'p(90)', 'p(95)'],
-  systemTags: ['status', 'method', 'name', 'scenario', 'expected_response'],
+  // Keep named checks/groups in root_group so HTML and terminal totals agree.
+  systemTags: ['status', 'method', 'name', 'scenario', 'expected_response', 'check', 'group'],
 };
 // Read the scenario definitions above: no second copy of the assignment flow.
 const activities = Object.entries(options.scenarios).map(([name, scenario]) => ({
