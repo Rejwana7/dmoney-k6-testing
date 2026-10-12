@@ -1,0 +1,112 @@
+{
+  "runId": "with-index-2026-10-12T18-05-34-429Z",
+  "temporaryLimitsRequested": true,
+  "indexModeRequested": "with-index",
+  "indexVerifiedBeforeRun": true,
+  "indexVerifiedAfterRun": true,
+  "indexBefore": {
+    "checkedAt": "2026-10-12T18:05:34.554Z",
+    "table": "transactions",
+    "indexes": [
+      {
+        "name": "idx_transactions_account_k6",
+        "column": "account",
+        "position": 1,
+        "nonUnique": 1,
+        "prefixLength": null,
+        "type": "BTREE",
+        "visible": "YES",
+        "expression": null
+      },
+      {
+        "name": "PRIMARY",
+        "column": "id",
+        "position": 1,
+        "nonUnique": 0,
+        "prefixLength": null,
+        "type": "BTREE",
+        "visible": "YES",
+        "expression": null
+      }
+    ],
+    "leadingAccountIndexes": [
+      "idx_transactions_account_k6"
+    ],
+    "usableAccountIndexes": [
+      "idx_transactions_account_k6"
+    ],
+    "transactionRows": 7214
+  },
+  "indexAfter": {
+    "checkedAt": "2026-10-12T18:07:35.675Z",
+    "table": "transactions",
+    "indexes": [
+      {
+        "name": "idx_transactions_account_k6",
+        "column": "account",
+        "position": 1,
+        "nonUnique": 1,
+        "prefixLength": null,
+        "type": "BTREE",
+        "visible": "YES",
+        "expression": null
+      },
+      {
+        "name": "PRIMARY",
+        "column": "id",
+        "position": 1,
+        "nonUnique": 0,
+        "prefixLength": null,
+        "type": "BTREE",
+        "visible": "YES",
+        "expression": null
+      }
+    ],
+    "leadingAccountIndexes": [
+      "idx_transactions_account_k6"
+    ],
+    "usableAccountIndexes": [
+      "idx_transactions_account_k6"
+    ],
+    "transactionRows": 8294
+  },
+  "temporaryLimitsApplied": true,
+  "originalRules": [
+    {
+      "id": 1,
+      "role": "Customer",
+      "period": "daily",
+      "max_amount": "5000.00",
+      "max_count": 10,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "role": "Customer",
+      "period": "monthly",
+      "max_amount": "50000.00",
+      "max_count": 50,
+      "is_active": 1
+    }
+  ],
+  "testRules": [
+    {
+      "id": 1,
+      "role": "Customer",
+      "period": "daily",
+      "max_amount": 1000000,
+      "max_count": 10000,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "role": "Customer",
+      "period": "monthly",
+      "max_amount": 1000000,
+      "max_count": 10000,
+      "is_active": 1
+    }
+  ],
+  "limitSettingsRestored": true,
+  "interrupted": false
+}

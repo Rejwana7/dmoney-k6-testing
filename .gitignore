@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+config/users.local.json
+config/limits-backup.local.json
+config/cleanup-backup.local.json
+reports/**/raw.json
+reports/**/console.log
+node_modules/
+.browser-profile/
+
+config/account-index.local.json
+
+./plan.md

@@ -1,0 +1,973 @@
+{
+  "runId": "with-index-2026-10-12T18-05-34-429Z",
+  "generatedAt": "2026-10-12T18:07:35.160Z",
+  "mode": "with-index",
+  "workloadSeconds": 120,
+  "observedWorkloadSeconds": 120.2291889,
+  "intervalSeconds": 1,
+  "pacing": "post-response",
+  "thinkTimeSeconds": 1,
+  "status": "PASS",
+  "temporaryLimits": true,
+  "overall": {
+    "label": "All transactions",
+    "requests": 390,
+    "successful": 390,
+    "failed": 0,
+    "activeSeconds": 120,
+    "throughputActive": 3.25,
+    "throughputWholeTest": 3.25,
+    "successThroughputActive": 3.25,
+    "avg": 19.208403076923073,
+    "median": 18.758249999999997,
+    "p90": 22.40884,
+    "p95": 27.048874999999978,
+    "max": 42.0437,
+    "httpFailureRate": 0,
+    "checkPassRate": 1,
+    "transactionFailureRate": 0
+  },
+  "apis": [
+    {
+      "label": "Deposit",
+      "requests": 90,
+      "successful": 90,
+      "failed": 0,
+      "activeSeconds": 60,
+      "throughputActive": 1.5,
+      "throughputWholeTest": 0.75,
+      "successThroughputActive": 1.5,
+      "avg": 19.167068888888885,
+      "median": 18.76195,
+      "p90": 20.91678,
+      "p95": 39.604045,
+      "max": 42.0437,
+      "httpFailureRate": 0,
+      "checkPassRate": 1,
+      "transactionFailureRate": 0
+    },
+    {
+      "label": "SendMoney",
+      "requests": 90,
+      "successful": 90,
+      "failed": 0,
+      "activeSeconds": 90,
+      "throughputActive": 1,
+      "throughputWholeTest": 0.75,
+      "successThroughputActive": 1,
+      "avg": 20.14900333333334,
+      "median": 18.96015,
+      "p90": 25.036590000000004,
+      "p95": 27.387124999999994,
+      "max": 39.3045,
+      "httpFailureRate": 0,
+      "checkPassRate": 1,
+      "transactionFailureRate": 0
+    },
+    {
+      "label": "Payment",
+      "requests": 210,
+      "successful": 210,
+      "failed": 0,
+      "activeSeconds": 120,
+      "throughputActive": 1.75,
+      "throughputWholeTest": 1.75,
+      "successThroughputActive": 1.75,
+      "avg": 18.823003333333336,
+      "median": 18.5402,
+      "p90": 21.883390000000002,
+      "p95": 23.877819999999996,
+      "max": 37.0169,
+      "httpFailureRate": 0,
+      "checkPassRate": 1,
+      "transactionFailureRate": 0
+    }
+  ],
+  "phases": [
+    {
+      "label": "p1",
+      "requests": 60,
+      "successful": 60,
+      "failed": 0,
+      "activeSeconds": 30,
+      "throughputActive": 2,
+      "throughputWholeTest": 0.5,
+      "successThroughputActive": 2,
+      "avg": 21.441398333333336,
+      "median": 20.16715,
+      "p90": 28.206120000000002,
+      "p95": 29.691224999999996,
+      "max": 32.9662,
+      "httpFailureRate": 0,
+      "checkPassRate": 1,
+      "transactionFailureRate": 0,
+      "concurrentVUs": 2
+    },
+    {
+      "label": "p2",
+      "requests": 90,
+      "successful": 90,
+      "failed": 0,
+      "activeSeconds": 30,
+      "throughputActive": 3,
+      "throughputWholeTest": 0.75,
+      "successThroughputActive": 3,
+      "avg": 19.456653333333332,
+      "median": 18.70105,
+      "p90": 21.613480000000003,
+      "p95": 27.009304999999994,
+      "max": 42.0437,
+      "httpFailureRate": 0,
+      "checkPassRate": 1,
+      "transactionFailureRate": 0,
+      "concurrentVUs": 3
+    },
+    {
+      "label": "p3",
+      "requests": 120,
+      "successful": 120,
+      "failed": 0,
+      "activeSeconds": 30,
+      "throughputActive": 4,
+      "throughputWholeTest": 1,
+      "successThroughputActive": 4,
+      "avg": 19.409079166666665,
+      "median": 18.91755,
+      "p90": 21.94202,
+      "p95": 27.995814999999993,
+      "max": 40.6785,
+      "httpFailureRate": 0,
+      "checkPassRate": 1,
+      "transactionFailureRate": 0,
+      "concurrentVUs": 4
+    },
+    {
+      "label": "p4",
+      "requests": 120,
+      "successful": 120,
+      "failed": 0,
+      "activeSeconds": 30,
+      "throughputActive": 4,
+      "throughputWholeTest": 1,
+      "successThroughputActive": 4,
+      "avg": 17.705041666666677,
+      "median": 18.0405,
+      "p90": 20.59476,
+      "p95": 21.67667,
+      "max": 27.2804,
+      "httpFailureRate": 0,
+      "checkPassRate": 1,
+      "transactionFailureRate": 0,
+      "concurrentVUs": 4
+    }
+  ],
+  "apiPhases": [
+    {
+      "label": "SendMoney / p1",
+      "requests": 30,
+      "successful": 30,
+      "failed": 0,
+      "activeSeconds": 30,
+      "throughputActive": 1,
+      "throughputWholeTest": 0.25,
+      "successThroughputActive": 1,
+      "avg": 21.390249999999995,
+      "median": 19.719250000000002,
+      "p90": 26.96124,
+      "p95": 28.929565,
+      "max": 31.9636,
+      "httpFailureRate": 0,
+      "checkPassRate": 1,
+      "transactionFailureRate": 0,
+      "api": "SendMoney",
+      "phase": "p1"
+    },
+    {
+      "label": "Payment / p1",
+      "requests": 30,
+      "successful": 30,
+      "failed": 0,
+      "activeSeconds": 30,
+      "throughputActive": 1,
+      "throughputWholeTest": 0.25,
+      "successThroughputActive": 1,
+      "avg": 21.49254666666666,
+      "median": 20.415399999999998,
+      "p90": 28.29435,
+      "p95": 30.587474999999998,
+      "max": 32.9662,
+      "httpFailureRate": 0,
+      "checkPassRate": 1,
+      "transactionFailureRate": 0,
+      "api": "Payment",
+      "phase": "p1"
+    },
+    {
+      "label": "SendMoney / p2",
+      "requests": 30,
+      "successful": 30,
+      "failed": 0,
+      "activeSeconds": 30,
+      "throughputActive": 1,
+      "throughputWholeTest": 0.25,
+      "successThroughputActive": 1,
+      "avg": 19.54272333333334,
+      "median": 18.837000000000003,
+      "p90": 21.339090000000006,
+      "p95": 25.791435,
+      "max": 27.8954,
+      "httpFailureRate": 0,
+      "checkPassRate": 1,
+      "transactionFailureRate": 0,
+      "api": "SendMoney",
+      "phase": "p2"
+    },
+    {
+      "label": "Deposit / p2",
+      "requests": 30,
+      "successful": 30,
+      "failed": 0,
+      "activeSeconds": 30,
+      "throughputActive": 1,
+      "throughputWholeTest": 0.25,
+      "successThroughputActive": 1,
+      "avg": 19.374963333333334,
+      "median": 18.7409,
+      "p90": 20.72599,
+      "p95": 32.262959999999936,
+      "max": 42.0437,
+      "httpFailureRate": 0,
+      "checkPassRate": 1,
+      "transactionFailureRate": 0,
+      "api": "Deposit",
+      "phase": "p2"
+    },
+    {
+      "label": "Payment / p2",
+      "requests": 30,
+      "successful": 30,
+      "failed": 0,
+      "activeSeconds": 30,
+      "throughputActive": 1,
+      "throughputWholeTest": 0.25,
+      "successThroughputActive": 1,
+      "avg": 19.45227333333333,
+      "median": 17.91525,
+      "p90": 21.98807,
+      "p95": 30.65320999999996,
+      "max": 37.0169,
+      "httpFailureRate": 0,
+      "checkPassRate": 1,
+      "transactionFailureRate": 0,
+      "api": "Payment",
+      "phase": "p2"
+    },
+    {
+      "label": "Deposit / p3",
+      "requests": 60,
+      "successful": 60,
+      "failed": 0,
+      "activeSeconds": 30,
+      "throughputActive": 2,
+      "throughputWholeTest": 0.5,
+      "successThroughputActive": 2,
+      "avg": 19.063121666666667,
+      "median": 18.8264,
+      "p90": 20.935209999999998,
+      "p95": 39.178095,
+      "max": 40.6785,
+      "httpFailureRate": 0,
+      "checkPassRate": 1,
+      "transactionFailureRate": 0,
+      "api": "Deposit",
+      "phase": "p3"
+    },
+    {
+      "label": "SendMoney / p3",
+      "requests": 30,
+      "successful": 30,
+      "failed": 0,
+      "activeSeconds": 30,
+      "throughputActive": 1,
+      "throughputWholeTest": 0.25,
+      "successThroughputActive": 1,
+      "avg": 19.514036666666666,
+      "median": 18.60635,
+      "p90": 23.906190000000002,
+      "p95": 24.916555000000002,
+      "max": 39.3045,
+      "httpFailureRate": 0,
+      "checkPassRate": 1,
+      "transactionFailureRate": 0,
+      "api": "SendMoney",
+      "phase": "p3"
+    },
+    {
+      "label": "Payment / p3",
+      "requests": 30,
+      "successful": 30,
+      "failed": 0,
+      "activeSeconds": 30,
+      "throughputActive": 1,
+      "throughputWholeTest": 0.25,
+      "successThroughputActive": 1,
+      "avg": 19.99603666666666,
+      "median": 19.1841,
+      "p90": 22.049920000000004,
+      "p95": 26.128754999999988,
+      "max": 29.4743,
+      "httpFailureRate": 0,
+      "checkPassRate": 1,
+      "transactionFailureRate": 0,
+      "api": "Payment",
+      "phase": "p3"
+    },
+    {
+      "label": "Payment / p4",
+      "requests": 120,
+      "successful": 120,
+      "failed": 0,
+      "activeSeconds": 30,
+      "throughputActive": 4,
+      "throughputWholeTest": 1,
+      "successThroughputActive": 4,
+      "avg": 17.705041666666677,
+      "median": 18.0405,
+      "p90": 20.59476,
+      "p95": 21.67667,
+      "max": 27.2804,
+      "httpFailureRate": 0,
+      "checkPassRate": 1,
+      "transactionFailureRate": 0,
+      "api": "Payment",
+      "phase": "p4"
+    }
+  ],
+  "changes": [
+    {
+      "api": "Deposit",
+      "from": "p2",
+      "to": "p3",
+      "fromSamples": 30,
+      "toSamples": 60,
+      "p95ChangePercent": 21.433665726889515,
+      "throughputChangePercent": 100
+    },
+    {
+      "api": "SendMoney",
+      "from": "p1",
+      "to": "p2",
+      "fromSamples": 30,
+      "toSamples": 30,
+      "p95ChangePercent": -10.84748422591214,
+      "throughputChangePercent": 0
+    },
+    {
+      "api": "SendMoney",
+      "from": "p2",
+      "to": "p3",
+      "fromSamples": 30,
+      "toSamples": 30,
+      "p95ChangePercent": -3.3921338614931518,
+      "throughputChangePercent": 0
+    },
+    {
+      "api": "Payment",
+      "from": "p1",
+      "to": "p2",
+      "fromSamples": 30,
+      "toSamples": 30,
+      "p95ChangePercent": 0.21490822632452833,
+      "throughputChangePercent": 0
+    },
+    {
+      "api": "Payment",
+      "from": "p2",
+      "to": "p3",
+      "fromSamples": 30,
+      "toSamples": 30,
+      "p95ChangePercent": -14.760134419853511,
+      "throughputChangePercent": 0
+    },
+    {
+      "api": "Payment",
+      "from": "p3",
+      "to": "p4",
+      "fromSamples": 30,
+      "toSamples": 120,
+      "p95ChangePercent": -17.039024630144027,
+      "throughputChangePercent": 300
+    }
+  ],
+  "thresholdResults": [
+    {
+      "metric": "transaction_duration{api:Deposit,phase:p2}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed{phase:p2}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_duration{api:SendMoney,phase:p1}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{scenario:p4_c2_pay_m2}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success{api:Deposit}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed{phase:p1}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_duration{api:Payment}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "http_req_duration{api:Payment}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{api:Payment}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed{api:SendMoney,phase:p1}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "http_req_duration",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success{phase:p1}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "checks{api:SendMoney,kind:transaction}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks{api:Payment,phase:p3}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success{phase:p3}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_duration{api:Payment,phase:p4}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{api:Payment,phase:p2}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "checks{api:Deposit,kind:transaction}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success{api:Payment}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success{api:SendMoney,phase:p2}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{scenario:p4_a1_pay_m1}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{scenario:p2_c2_send_c1}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks{api:Payment,phase:p4}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks{phase:p4}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks{api:SendMoney,phase:p1}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_duration{phase:p2}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success{phase:p4}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{scenario:p1_c1_send_c2}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{phase:p2}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success{api:SendMoney,phase:p1}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_duration{api:SendMoney,phase:p2}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_duration{api:SendMoney,phase:p3}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed{api:Payment,phase:p3}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_duration{api:Payment,phase:p3}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_duration{phase:p3}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{scenario:p3_a1_deposit_c1}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "checks{api:Payment,kind:transaction}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success{api:Deposit,phase:p3}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks{phase:p2}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "http_req_failed{api:Payment}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks{api:Deposit,phase:p2}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_duration{api:Deposit}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed{api:Payment,phase:p1}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{scenario:p1_c2_pay_m1}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success{api:SendMoney}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "http_req_failed{api:SendMoney}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{api:Deposit,phase:p2}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks{api:Payment,phase:p2}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{api:Deposit}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "http_req_duration{api:SendMoney}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{api:Payment,phase:p4}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{scenario:p4_c1_pay_m1}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "checks{kind:transaction}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{scenario:p2_c1_pay_m1}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_duration{phase:p4}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "http_req_failed",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed{api:Payment,phase:p4}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_duration{api:Payment,phase:p2}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{api:Deposit,phase:p3}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success{phase:p2}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed{api:SendMoney,phase:p2}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed{api:Deposit}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "http_req_failed{api:Deposit}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{api:SendMoney,phase:p1}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed{api:Deposit,phase:p3}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{scenario:p4_a2_pay_m2}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_duration",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed{api:Payment,phase:p2}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks{api:SendMoney,phase:p2}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{phase:p4}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed{phase:p4}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success{api:Payment,phase:p4}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{api:Payment,phase:p3}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "checks",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{scenario:p3_a2_deposit_c2}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_duration{phase:p1}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks{phase:p3}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{api:Payment,phase:p1}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks{api:Deposit,phase:p3}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success{api:Payment,phase:p3}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed{phase:p3}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks{api:Payment,phase:p1}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{api:SendMoney,phase:p2}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{api:SendMoney,phase:p3}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{scenario:p3_c1_send_c2}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{phase:p3}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{scenario:p3_c2_pay_m2}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success{api:Payment,phase:p2}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks{api:SendMoney}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed{api:Payment}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success{api:Payment,phase:p1}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed{api:SendMoney,phase:p3}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_duration{api:SendMoney}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks{api:Payment}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success{api:SendMoney,phase:p3}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{phase:p1}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed{api:SendMoney}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_http_failed{api:Deposit,phase:p2}",
+      "rule": "rate<0.01",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{scenario:p2_a1_deposit_c2}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks{phase:p1}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests{api:SendMoney}",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "http_req_duration{api:Deposit}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks{api:Deposit}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_requests",
+      "rule": "count>0",
+      "passed": true
+    },
+    {
+      "metric": "transaction_duration{api:Payment,phase:p1}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks{api:SendMoney,phase:p3}",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_checks",
+      "rule": "rate>=0.99",
+      "passed": true
+    },
+    {
+      "metric": "transaction_duration{api:Deposit,phase:p3}",
+      "rule": "p(95)<1000",
+      "passed": true
+    },
+    {
+      "metric": "transaction_success{api:Deposit,phase:p2}",
+      "rule": "rate>=0.99",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "Closed VU model: each response is followed by a one-second think time, capped at the phase boundary. Slower responses reduce throughput.",
+    "Pacing differs from earlier start-to-start runs; changing pacing and indexes together cannot isolate an index effect.",
+    "Customer limits were temporarily raised but remained active. See run-metadata.json for post-test restoration evidence; transfers and quota usage persist.",
+    "NOT RUN means no transaction samples; INCOMPLETE means the planned workload was not fully observed. Neither is a performance pass.",
+    "This two-minute local run is not a capacity benchmark; small API/phase samples limit tail-latency conclusions.",
+    "API throughput uses active API seconds; whole-test throughput uses the full workload window.",
+    "Authentication, provisioning and limit/balance preflight are excluded from transaction metrics.",
+    "Runner verified with-index before execution. See run-metadata.json for index definitions before/after and ledger row counts.",
+    "The runner does not add/drop indexes. An account index can reduce locking conflicts but cannot guarantee no deadlocks.",
+    "Transfers, fees, history and quota usage persist between runs. Without matching DB snapshots, before/after results are observational, not an isolated index benchmark.",
+    "Latency includes successful and failed responses; quick failures can make latency look better while reliability degrades."
+  ]
+}

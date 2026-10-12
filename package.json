@@ -1,0 +1,16 @@
+{
+  "name": "dmoney-k6-assignment",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seed": "node scripts/prepare-users.mjs",
+    "perf": "node scripts/run.mjs",
+    "perf:without-index": "node scripts/run.mjs --temporary-limits --without-index",
+    "perf:with-index": "node scripts/run.mjs --temporary-limits --with-index",
+    "index:check": "node scripts/account-index.mjs check",
+    "index:add": "node scripts/account-index.mjs add",
+    "index:drop": "node scripts/account-index.mjs drop",
+    "restore-db": "node scripts/limits.mjs restore"
+  },
+  "engines": { "node": ">=22" }
+}

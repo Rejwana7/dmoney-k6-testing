@@ -1,0 +1,1760 @@
+{
+  "metrics": {
+    "transaction_http_failed{phase:p4}": {
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 116
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      },
+      "type": "rate"
+    },
+    "transaction_requests{api:SendMoney,phase:p2}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "checks{api:Deposit,kind:transaction}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 348,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_http_failed{phase:p3}": {
+      "values": {
+        "fails": 116,
+        "rate": 0,
+        "passes": 0
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "checks{kind:transaction}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 1508,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{scenario:p4_c1_pay_m1}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_http_failed": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 377
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{scenario:p2_c1_pay_m1}": {
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      },
+      "type": "counter",
+      "contains": "default"
+    },
+    "transaction_duration{api:Payment}": {
+      "values": {
+        "avg": 41.046699014778326,
+        "min": 18.5593,
+        "med": 39.5087,
+        "max": 122.4122,
+        "p(90)": 51.987880000000004,
+        "p(95)": 61.35780999999998
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "transaction_http_failed{api:Deposit,phase:p2}": {
+      "contains": "default",
+      "values": {
+        "fails": 29,
+        "rate": 0,
+        "passes": 0
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      },
+      "type": "rate"
+    },
+    "transaction_success{api:Payment,phase:p2}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "passes": 29,
+        "fails": 0,
+        "rate": 1
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{api:SendMoney,phase:p3}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "http_req_duration{api:Payment}": {
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      },
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 41.046699014778326,
+        "min": 18.5593,
+        "med": 39.5087,
+        "max": 122.4122,
+        "p(90)": 51.987880000000004,
+        "p(95)": 61.35780999999998
+      }
+    },
+    "checks{api:SendMoney,kind:transaction}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 348,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_http_failed{api:SendMoney,phase:p3}": {
+      "contains": "default",
+      "values": {
+        "fails": 29,
+        "rate": 0,
+        "passes": 0
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      },
+      "type": "rate"
+    },
+    "transaction_requests": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 377,
+        "rate": 3.1336133352333504
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{scenario:p3_c2_pay_m2}": {
+      "contains": "default",
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      },
+      "type": "counter"
+    },
+    "transaction_requests{api:Deposit}": {
+      "contains": "default",
+      "values": {
+        "count": 87,
+        "rate": 0.7231415389000039
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      },
+      "type": "counter"
+    },
+    "transaction_success{api:Payment}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 203,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_checks{api:Deposit,phase:p3}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 232,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_duration{phase:p2}": {
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      },
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 43.99536206896552,
+        "min": 31.6487,
+        "med": 45.6158,
+        "max": 66.2097,
+        "p(90)": 50.160560000000004,
+        "p(95)": 51.1177
+      }
+    },
+    "transaction_checks{api:Payment,phase:p2}": {
+      "values": {
+        "rate": 1,
+        "passes": 116,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "transaction_checks{api:SendMoney,phase:p3}": {
+      "values": {
+        "fails": 0,
+        "rate": 1,
+        "passes": 116
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "transaction_requests{api:SendMoney}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 87,
+        "rate": 0.7231415389000039
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_duration{phase:p4}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 57.852624999999996,
+        "avg": 37.932205172413795,
+        "min": 18.5593,
+        "med": 35.6416,
+        "max": 95.142,
+        "p(90)": 48.221000000000004
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{scenario:p2_a1_deposit_c2}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_checks{api:Deposit,phase:p2}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "fails": 0,
+        "rate": 1,
+        "passes": 116
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_checks{api:Payment}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 812,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{phase:p2}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "rate": 0.7231415389000039,
+        "count": 87
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "http_req_sending": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 0,
+        "avg": 0.01820200501253133,
+        "min": 0,
+        "med": 0,
+        "max": 2.3082,
+        "p(90)": 0
+      }
+    },
+    "transaction_http_failed{api:Deposit}": {
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 87
+      }
+    },
+    "data_received": {
+      "type": "counter",
+      "contains": "data",
+      "values": {
+        "count": 337226,
+        "rate": 2803.012972380376
+      }
+    },
+    "http_req_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 124.235,
+        "p(90)": 51.32018,
+        "p(95)": 60.516229999999965,
+        "avg": 41.00773709273183,
+        "min": 5.1855,
+        "med": 40.8926
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "http_req_failed": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 399
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_duration{api:SendMoney}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 44.634991954023,
+        "min": 29.5766,
+        "med": 44.14,
+        "max": 124.235,
+        "p(90)": 51.72010000000001,
+        "p(95)": 61.189140000000016
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_success{api:SendMoney,phase:p2}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 29,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "http_req_failed{api:Deposit}": {
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 87
+      }
+    },
+    "transaction_duration{api:SendMoney,phase:p1}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 42.008468965517245,
+        "min": 29.5766,
+        "med": 43.6955,
+        "max": 52.9879,
+        "p(90)": 50.74754,
+        "p(95)": 51.04422
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_duration{api:Deposit,phase:p3}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 63.742965000000005,
+        "avg": 45.051955172413784,
+        "min": 31.6391,
+        "med": 43.75985,
+        "max": 109.2711,
+        "p(90)": 56.95909
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_http_failed{api:Payment}": {
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 203
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      },
+      "type": "rate"
+    },
+    "transaction_duration{api:Payment,phase:p2}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 31.6487,
+        "med": 45.5248,
+        "max": 55.9911,
+        "p(90)": 50.4994,
+        "p(95)": 53.71421999999999,
+        "avg": 44.13603793103448
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{scenario:p3_a2_deposit_c2}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{phase:p4}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 116,
+        "rate": 0.9641887185333385
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{scenario:p4_c2_pay_m2}": {
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      },
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      }
+    },
+    "transaction_checks{api:Payment,phase:p3}": {
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 116,
+        "fails": 0
+      }
+    },
+    "transaction_http_failed{api:Payment,phase:p2}": {
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 29
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "data_sent": {
+      "contains": "data",
+      "values": {
+        "count": 200080,
+        "rate": 1663.0593000357792
+      },
+      "type": "counter"
+    },
+    "transaction_success{phase:p2}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "fails": 0,
+        "rate": 1,
+        "passes": 87
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{scenario:p2_c2_send_c1}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_duration": {
+      "values": {
+        "avg": 42.67121909814324,
+        "min": 18.5593,
+        "med": 42.0685,
+        "max": 124.235,
+        "p(90)": 51.906240000000004,
+        "p(95)": 61.76889999999999
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "transaction_success{api:Deposit,phase:p2}": {
+      "values": {
+        "rate": 1,
+        "passes": 29,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "transaction_success{phase:p1}": {
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 58,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      },
+      "type": "rate"
+    },
+    "transaction_requests{scenario:p1_c1_send_c2}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "vus_max": {
+      "type": "gauge",
+      "contains": "default",
+      "values": {
+        "value": 4,
+        "min": 4,
+        "max": 4
+      }
+    },
+    "iteration_duration": {
+      "values": {
+        "avg": 976.7977548469388,
+        "min": 0,
+        "med": 1042.8262,
+        "max": 1125.3502,
+        "p(90)": 1055.5782199999999,
+        "p(95)": 1068.421005
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "transaction_http_failed{api:Payment,phase:p1}": {
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 29
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "transaction_requests{api:Payment,phase:p2}": {
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      },
+      "type": "counter",
+      "contains": "default"
+    },
+    "transaction_checks{api:Payment,phase:p4}": {
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 464,
+        "fails": 0
+      }
+    },
+    "iterations": {
+      "values": {
+        "count": 392,
+        "rate": 3.2582929109057646
+      },
+      "type": "counter",
+      "contains": "default"
+    },
+    "transaction_requests{phase:p3}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 116,
+        "rate": 0.9641887185333385
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_http_failed{api:Deposit,phase:p3}": {
+      "contains": "default",
+      "values": {
+        "fails": 58,
+        "rate": 0,
+        "passes": 0
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      },
+      "type": "rate"
+    },
+    "transaction_requests{api:Deposit,phase:p2}": {
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      },
+      "type": "counter",
+      "contains": "default"
+    },
+    "http_req_connecting": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 0.007931829573934839,
+        "min": 0,
+        "med": 0,
+        "max": 1.0222,
+        "p(90)": 0,
+        "p(95)": 0
+      }
+    },
+    "http_reqs": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 399,
+        "rate": 3.316476712886225
+      }
+    },
+    "transaction_http_failed{api:Payment,phase:p4}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "fails": 116,
+        "rate": 0,
+        "passes": 0
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_checks{api:SendMoney,phase:p2}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 116,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{phase:p1}": {
+      "contains": "default",
+      "values": {
+        "rate": 0.48209435926666927,
+        "count": 58
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      },
+      "type": "counter"
+    },
+    "http_req_waiting": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 40.51401578947372,
+        "min": 4.554,
+        "med": 40.7444,
+        "max": 124.235,
+        "p(90)": 50.6966,
+        "p(95)": 59.95768999999994
+      }
+    },
+    "transaction_duration{api:Deposit}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 59.41154000000001,
+        "avg": 44.49799310344828,
+        "min": 31.6391,
+        "med": 44.0349,
+        "max": 109.2711,
+        "p(90)": 51.35316
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{api:SendMoney,phase:p1}": {
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      },
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      }
+    },
+    "transaction_success{api:SendMoney}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 87,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_success": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "fails": 0,
+        "rate": 1,
+        "passes": 377
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_http_failed{api:SendMoney}": {
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "passes": 0,
+        "fails": 87,
+        "rate": 0
+      }
+    },
+    "transaction_success{api:Payment,phase:p4}": {
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 116,
+        "fails": 0
+      }
+    },
+    "transaction_http_failed{phase:p1}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "passes": 0,
+        "fails": 58,
+        "rate": 0
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_duration{phase:p1}": {
+      "values": {
+        "avg": 42.75588793103449,
+        "min": 29.5076,
+        "med": 43.62425,
+        "max": 76.1616,
+        "p(90)": 50.77621,
+        "p(95)": 53.05552
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "transaction_success{phase:p4}": {
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 116,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      },
+      "type": "rate"
+    },
+    "transaction_requests{scenario:p4_a2_pay_m2}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_checks{api:Deposit}": {
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 348,
+        "fails": 0
+      }
+    },
+    "transaction_checks{api:Payment,phase:p1}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 116,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "http_req_failed{api:SendMoney}": {
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 87
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "checks{api:Payment,kind:transaction}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "passes": 812,
+        "fails": 0,
+        "rate": 1
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "http_req_failed{api:Payment}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 203
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{scenario:p3_a1_deposit_c1}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "http_req_duration{api:SendMoney}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 124.235,
+        "p(90)": 51.72010000000001,
+        "p(95)": 61.189140000000016,
+        "avg": 44.634991954023,
+        "min": 29.5766,
+        "med": 44.14
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_checks": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 1508,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{scenario:p4_a1_pay_m1}": {
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      },
+      "type": "counter",
+      "contains": "default"
+    },
+    "transaction_requests{scenario:p1_c2_pay_m1}": {
+      "values": {
+        "rate": 0.24104717963333464,
+        "count": 29
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      },
+      "type": "counter",
+      "contains": "default"
+    },
+    "transaction_checks{phase:p4}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 464,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_success{api:Payment,phase:p3}": {
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 29,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      },
+      "type": "rate"
+    },
+    "http_req_receiving": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 0,
+        "med": 0.4989,
+        "max": 2.1487,
+        "p(90)": 0.99814,
+        "p(95)": 1.04246,
+        "avg": 0.4755192982456136
+      }
+    },
+    "transaction_http_failed{api:SendMoney,phase:p1}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 29
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_checks{phase:p1}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 232,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "vus": {
+      "type": "gauge",
+      "contains": "default",
+      "values": {
+        "value": 4,
+        "min": 2,
+        "max": 4
+      }
+    },
+    "transaction_http_failed{api:SendMoney,phase:p2}": {
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 29
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      },
+      "type": "rate"
+    },
+    "transaction_checks{api:SendMoney,phase:p1}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 116,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_duration{api:Payment,phase:p3}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 31.2941,
+        "med": 44.5663,
+        "max": 122.4122,
+        "p(90)": 72.3797,
+        "p(95)": 75.83302,
+        "avg": 47.9587275862069
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_duration{api:Payment,phase:p1}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 58.255619999999986,
+        "avg": 43.50330689655173,
+        "min": 29.5076,
+        "med": 43.2978,
+        "max": 76.1616,
+        "p(90)": 50.8927
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_success{api:Deposit}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 87,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_success{api:Deposit,phase:p3}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "fails": 0,
+        "rate": 1,
+        "passes": 58
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{api:Payment,phase:p4}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 116,
+        "rate": 0.9641887185333385
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_checks{phase:p3}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 464,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_duration{api:SendMoney,phase:p2}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 32.9394,
+        "med": 45.8243,
+        "max": 66.2097,
+        "p(90)": 50.10738,
+        "p(95)": 54.47049999999999,
+        "avg": 44.45997931034483
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_duration{phase:p3}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(90)": 61.69375,
+        "p(95)": 72.559525,
+        "avg": 46.37479137931034,
+        "min": 29.834,
+        "med": 44.05245,
+        "max": 124.235
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_checks{api:SendMoney}": {
+      "values": {
+        "passes": 348,
+        "fails": 0,
+        "rate": 1
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "transaction_http_failed{phase:p2}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 87
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_duration{api:Deposit,phase:p2}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 43.390068965517244,
+        "min": 32.4138,
+        "med": 45.3327,
+        "max": 51.2872,
+        "p(90)": 49.77666,
+        "p(95)": 50.306619999999995
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "http_req_duration{expected_response:true}": {
+      "values": {
+        "med": 40.8926,
+        "max": 124.235,
+        "p(90)": 51.32018,
+        "p(95)": 60.516229999999965,
+        "avg": 41.00773709273183,
+        "min": 5.1855
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "http_req_duration{api:Deposit}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 44.49799310344828,
+        "min": 31.6391,
+        "med": 44.0349,
+        "max": 109.2711,
+        "p(90)": 51.35316,
+        "p(95)": 59.41154000000001
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_success{api:SendMoney,phase:p3}": {
+      "values": {
+        "rate": 1,
+        "passes": 29,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "transaction_duration{api:SendMoney,phase:p3}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 47.43652758620691,
+        "min": 29.834,
+        "med": 44.14,
+        "max": 124.235,
+        "p(90)": 64.2819,
+        "p(95)": 79.15139999999997
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{api:Payment}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "rate": 1.6873302574333424,
+        "count": 203
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_http_failed{api:Payment,phase:p3}": {
+      "values": {
+        "passes": 0,
+        "fails": 29,
+        "rate": 0
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "checks": {
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 1520,
+        "fails": 0
+      }
+    },
+    "transaction_success{api:SendMoney,phase:p1}": {
+      "contains": "default",
+      "values": {
+        "passes": 29,
+        "fails": 0,
+        "rate": 1
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      },
+      "type": "rate"
+    },
+    "http_req_blocked": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 0,
+        "med": 0,
+        "max": 2.3082,
+        "p(90)": 0,
+        "p(95)": 0,
+        "avg": 0.0220593984962406
+      }
+    },
+    "transaction_requests{api:Deposit,phase:p3}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 58,
+        "rate": 0.48209435926666927
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_success{api:Payment,phase:p1}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "fails": 0,
+        "rate": 1,
+        "passes": 29
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_checks{phase:p2}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 348,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_success{phase:p3}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 116,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "http_req_tls_handshaking": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 0,
+        "min": 0,
+        "med": 0,
+        "max": 0,
+        "p(90)": 0,
+        "p(95)": 0
+      }
+    },
+    "transaction_requests{scenario:p3_c1_send_c2}": {
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      },
+      "type": "counter",
+      "contains": "default"
+    },
+    "transaction_requests{api:Payment,phase:p1}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      }
+    },
+    "transaction_requests{api:Payment,phase:p3}": {
+      "values": {
+        "count": 29,
+        "rate": 0.24104717963333464
+      },
+      "thresholds": {
+        "count>0": {
+          "ok": true
+        }
+      },
+      "type": "counter",
+      "contains": "default"
+    },
+    "transaction_duration{api:Payment,phase:p4}": {
+      "contains": "time",
+      "values": {
+        "p(90)": 48.221000000000004,
+        "p(95)": 57.852624999999996,
+        "avg": 37.932205172413795,
+        "min": 18.5593,
+        "med": 35.6416,
+        "max": 95.142
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      },
+      "type": "trend"
+    }
+  },
+  "root_group": {
+    "name": "",
+    "path": "",
+    "id": "d41d8cd98f00b204e9800998ecf8427e",
+    "groups": [],
+    "checks": []
+  },
+  "state": {
+    "isStdErrTTY": true,
+    "testRunDurationMs": 120308.3979,
+    "isStdOutTTY": true
+  },
+  "options": {
+    "summaryTrendStats": [
+      "avg",
+      "min",
+      "med",
+      "max",
+      "p(90)",
+      "p(95)"
+    ],
+    "summaryTimeUnit": ""
+  }
+}
