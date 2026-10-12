@@ -84,22 +84,22 @@ Both selected runs verified index state and restored limits. Transaction metrics
 
 | Run | API | Avg ms | p95 ms | Req/s | HTTP fail % | Checks pass % |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| Without index | Deposit | 30.44 | 42.60 | 1.48 | 1.12 | 98.88 |
-| Without index | Send Money | 29.80 | 37.34 | 0.99 | 1.12 | 98.88 |
-| Without index | Payment | 27.40 | 38.51 | 1.74 | 0.48 | 99.52 |
+| Without index | Deposit | 41.11 | 56.28 | 1.45 | 1.15 | 98.85 |
+| Without index | Send Money | 41.81 | 66.20 | 0.97 | 0.00 | 100.00 |
+| Without index | Payment | 37.01 | 54.30 | 1.71 | 0.49 | 99.51 |
 | With index | Deposit | 19.17 | 39.60 | 1.50 | 0.00 | 100.00 |
 | With index | Send Money | 20.15 | 27.39 | 1.00 | 0.00 | 100.00 |
 | With index | Payment | 18.82 | 23.88 | 1.75 | 0.00 | 100.00 |
 
-**Without index: FAIL** — 387 transactions, 3 failures; 89/111 thresholds passed. All failures occurred in 60-90s (2.56% failure rate); phase p95 rose from 33.10ms in 0-30s to 44.62ms. Deposit and Send Money breached API reliability thresholds.
+**Without index: FAIL** — 379 transactions, 2 failures and 8 failed checks; 97/111 thresholds passed. Overall transaction failure was 0.53%, but Deposit breached its API failure/check thresholds. Both failures occurred in 60-90s (1.72% failure rate), also breaching phase thresholds. Phase p95 rose from 52.98ms in 0-30s to 64.25ms in 30-60s, then fell to 59.53ms in 60-90s and 43.75ms in 90-120s; latency did not degrade monotonically with concurrency.
 
 **With index: PASS** — 390 transactions, zero failures, 100% checks; 111/111 thresholds passed. Phase 60-90s p95 was 28.00ms. Deposit p95 still rose from 32.26ms to 39.18ms as its concurrency doubled.
 
-One local run pair does not prove an index eliminates deadlocks. Starting ledger sizes differed (5,070 vs 7,214 rows); controlled comparisons require matching DB snapshots.
+One local run pair does not prove an index eliminates deadlocks. Starting ledger sizes differed (9,346 without index vs 7,214 with index); controlled comparisons require matching DB snapshots.
 
 ### Without index evidence
 
-[HTML report](reports/without-index-2026-10-12T17-47-19-485Z/report.html) · [API/phase results](reports/without-index-2026-10-12T17-47-19-485Z/results.md)
+[HTML report](reports/without-index-2026-10-12T19-05-21-690Z/report.html) · [API/phase results](reports/without-index-2026-10-12T19-05-21-690Z/results.md)
 
 HTML overview:
 
@@ -123,6 +123,6 @@ Terminal metrics (check summary):
 
 ## Report files
 
-Each run prints a timestamped report folder. Open `report.html` locally; GitHub displays HTML source. Overview HTTP totals include setup (409 without index, 413 with index), unlike the transaction totals above.
+Each run prints a timestamped report folder. Open `report.html` locally; GitHub displays HTML source. Overview HTTP totals include setup (404 without index, 413 with index), unlike the transaction totals above.
 
 `comparison.html` / `results.md`: API/phase analysis. `summary.json`: raw metrics. `run-metadata.json`: index verification and limit restoration.
